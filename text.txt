@@ -19,6 +19,3 @@ this is test 10000
 
 
 this is p1
-
-this is new mian committ
-this is new main commit4
