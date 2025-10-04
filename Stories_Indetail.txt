@@ -1,0 +1,106 @@
+Revenue Insights Dashboard to Replace Excel Files
+
+to calculate revenue metrix like revenue by Product, revenue by country , year over year revenue growth, team was using different exporeted ecel sheet and then merge and apply lot of formaulas to calculate the KPI's to present to Higher managemenet, this was leading to error and so manual work involed and laso if someone ask about the previous quarter rvenue again they have to the same thing, 
+but i joined all the required tables like products, ibx country, booking ones, then push the final one into data warehouse, on top of that i created a tableau dahsbaprd included all the KPI's, which are live, they can easilty track it on live, reduces the manual effort and also error free and also no need to use lot of excels, if anyone wants to see the revnue dahsbaord they can go and see it live ans also select the filters like time period, products or ibx region, its much interative,  it helps a lot for the team to track it
+
+
+New Logo Acquisition Dashboard
+wheni noined the equinix, there were no trackng of the new customers its always difficult to track it how the sales teams is doing to get the new customers into the company, i took a initiave of creating a new logos dashboard ( new customer into the company), and track it over the yers, i talked to stakeholder and understand and come up with new logos definition lik if any opportunity won in the paranet hirechy that is called as new logos and i build a data model by extracting the data from the Saleforce and push into datawarehouse, then i worked on the Finalized KPI matrix by metting with lots of stakeholders, build a new logo dahsbaord which contains KPi liek (new logos Yoy, MOM, QOQ, average dollar amount of new logos, what products are getting into new logos, new logos by ibx region, new logos by sales segment, which increases the new logos by 12 percnts fater 4 quarters and also sales team able to track it and they worked hard to get it if they are not getting many new logos
+
+
+BI Ownership During December Holidays
+during decemebr time, my whole team was in vacation but we got lot of adoc request and lot of minor rnhamcnement of tableau existing dahsbaord, i took a intiave of handling all of this and took a leadership to make sure we complete eveyrhting, what i did was i created a JIRa epic where i can add tableau enhancement list and adhoc request, based on the priority i tstarted working and taking to respective stakeholder IA request and able to manage and able to complete it all the request based on the priority level
+
+
+IA Request Tracker Using Smartsheet
+my team was using a teams and excel to track the IA request which contains any adoc request, Tableau enhamnet or adding data field into the data amodle or new dashboard rquest i often find that we missed a lot of request and stakeholder soften get back to us and aks for the status but we did not even starta, because they uslaly ask it in teams call or send a amil or send a request in Outlook, so i created a IA request for using Smarthseet where we can track each and eveyrhting easily, beacsue i build a request form which contains liek different categories like new dhasboa or data model field add or enhancement of existing dahsbaord , stakeholder started using it and we were to tarck each nd every IA request and complete it all with in a time frame, the only because now we have centralized request fors, everyone started using it, we see that we missed less IA request compare to previously
+
+Dashboard Performance Optimization
+We often see that our some dahsbaords like sales revenue, funnel and fabric attch rate dahsbaord are taking a lot of time to load it, i did deep into that to understand why is it taking too much time it because of two reason one is they directly connected to live data source, eveyrtime they access it it should get the data live, since data was huge, i come up with extract the data and refresh it very day based on the user request, and also worked on the optimization of the sql queries previously they have not used the index and they were just getting the all the columns insted of request columns, and also using lot of unnecessary joining, for example there is a dahsbaord where accounts contain all the opportunity but we need only the latest opporutnit where we can used window function like row_number ad order by date(row_number=1) to get the latest opportunity, so we see that somedahsbaord are taking 50 to 80 seconds to load after we worked on this we see noe they are taking arounf 15 sec to  10 sec.
+
+
+Learning PySpark for Customer/Product Analytics
+once i got a request to analysis the customer with respect to all the products using liek which customer segment are using which products, but it has arounds 30+ million rows data, usually i use pandas to do some analysis and work on it, since its big data, i learned the pyspark where it can improve the process by parallel and do it in memory, i did learn the course and understand the pyspark fully like what is pyspark, what are lazy evalution like transformation and actions, also understand the optimization like caching and partition, then i applied it for the our analysis, it worked pretty well, insted of taking lot fo time, now its taking pretty less time and able to analyse the huge data 
+
+
+Advanced Tableau Interactivity (Sheet Swapping, dynamic visibility, empty extract)
+when i was at equinix, team alsyws a get a feedback from stakeholders like we are adding too much vsiuals into a single dahsbaord , not able to concentrate on one, its distracting liek adding booking by products, region, customer segment, so i took a advanced tableau course online in coursera and learned many more thing lie shee swapping, dynamix visibility and also adding link int ot he image and also creating button and make it more interactivity, then i applied this things here in dhabsoard where insted of many vsiuals, we can see the different vsiausl absed on the user select, thats how it improved the used engemenet of these dahsbaords
+
+
+Sales Performance Cockpit Consolidation
+when i was at equinix, we had around 20 plus dahsbaord in Data analytics team to track the different metrics liek sales, booking,s ne wlogos, funnel, customer engament etc, but stakeholder often found that its difficult to track and see the all the dahsbaord we always find it more complicated, we come up soulutions like SPM(sales performance management) where we added the details of the dahsbaord in single dahsbaord lie imagine we had 15 plus dhabssrd, what we did we created a single data model where it contains all the data models, then buitls 15 min version in 15 different small container fo theis dahsbaord included al the necessary incfomratin, and also added the mail dahsbaord link if they want to see indebth of the particualt dahsbaord they can go and see it, we pushed it live and see the immense amount of usere started using it because they can see all the details in single dahbsaord and also its more interativity.
+
+
+Data Dictionary Across Models
+when i was in equinx, we developed a lot of data mdoels like SFDC opportunities, booking related, customer related but one thing i find it difficulat when i joined is we don;t have a data dictionary, for each data field what exactly it means and are we apply any logic behind it to calculate the data field, for example what is parent name, what is mrr, waht nrr, what is booking buckets, booking account, sales account liek this, we had many fields in all the dahsbaord, i created a all the dahsbaord data dictirony and clsoedly worked with my amanger to understand some o fthe fields and logic behind it , finally able to get the data dictioany for the all the data modles,stored all the infomraion in smartsheet and publish the tbaley on of the smarthseet data, whre use can sleect respective dtaa mdoelma dn see the what and all the dtaa fields with preoper explanation, satekehodlers nd new joiner often find it veru helpful about this, they often asked lot of question regarding the explanation, later we found that aksing many questions were reuced and also it was go to tools if anyione has a doubt regarding the any fields 
+
+
+Book-to-Bill Tooltip Enhancements
+we were developing a dahsbaord called book to bill where we addres many Crucial and complicated KPI liek how many dys required to customer from book to bill, what products are taking more time for book to bill, which ibx and ibx metro, but we often found that stakeholders are not able to understand the definition of complaicated KPI's , what are syain it in visually, i come with features called tool tips, for eacha nd evryt vsiuals we added a small image like tooltip if someone hover on this, they can the detailed explanation in simple words where they can easily understand it,i initied this and worked for one dahsbaord liek book to bill push it to the prod, later we found getting questions regarding the dahsbaord were decreased immenlsy, because  they we able to understand when they hover it to tooltip, later we adopted this methods for the all the dahbsaords and it was hude success fo the team
+
+
+Supporting SQL and Statistics Students as UTA TA
+i was working as teaching assiatant for the introduction to data sicen where 120+ student we involed, i see that they were sruggling a lot for the SQL query execution and not able to understand it propelly, what i did is i worked on the vsiuasl cheat sheet where i develope all the cluases like select, where, group by, order by, distinct visualsly and send it over all he student and also scheduled a weekly Q?A meeting, after that students were able to tacjle the questions easily because now they understand visualsly what happening behind, also see the immense results of this by some present increatse in grades, later fruer i also student requested for having a same visuall cheat for windows function, i created t and sent to all students
+
+
+QA Reporting Automation with Python/R at Tata Elxsi
+wheni was working at Tat exlsi, our team was presneint ghte list of KPIs about the Test case execution, like how many are backlog, how mnay are defect in current month, pass and failed then defect density etc, we usually get the exported data in excel and then manually worked on the excel and producing the vsiualls for the presentation, it was taking lot of time every wekk we sued to spend lot of time, but i crated a python code (using pandas to read excel and data manipulation) where we will get the all the details by runin the code and also visually it reduced the manuall effortby 90 percent and also it's very helpful for everyone.
+
+Inbox Dashboard Automation
+when i was working at equinix, i often found that we were aving mnay dhabsaord around 15 plus, stakeholder often forget to use tis dahsbaord due ot heir busy schduel, sometimes, they really wanted to see it but they might have forgot it, what we did is something like inbox automation using smartsheet to store the data and poython backend, we will send out a forms for al the stakeholder, where they can select whatever dahsbaord they wantto see, they can sleect andlaos filter on top of the dashboard, and also time and period like everyday, week or month ,whatit does it tores the information in dsamrsheet, using he bacend python it taked a screenshot of the dahsbaord and sent to the respective stakehdler incluing he screeshsot of dahsbaord and also link to the main dahbsaord thats how use engament was increased
+
+
+Last-Minute Territory Filter Add for $30M+ Pipeline
+we worked on the dahsbaord and pushed it prod, but the sales teams were presenting to Vp, directors about the sales, but last minutes they came to use and informaed that they wanted to add the filters, but we already have a standard filter like region, customer segmenet and also product sliek this about 8 filters on top of the dahsbaord, but informaed to add 2 more of this dahdbaords liek terrioty and sub territoey filter they can see the territory and sub territory level details also, i come up with additional filter buttion on right  of the standard filters, where they click it it shodws these fitlers, but i had a work with takeholder to understand how we shoud get the terrioty and sub teroroit since we dont have direct fields, we need to get this from account owner terrioty and subterrioty, i disuceed with stakeholdrs then i created a calculation field for the terriotu and sub terrioty level and put in the additional fitlers button, we also valudated the dtaa by comparing teriroty nd sub territory leevle, leter we adoptee this method for all the dahbsaord where we have new button liek addiotn filter symbol if they click they can all the extarc filter not only stanard filters
+
+
+Worked on the Newlogic and old logic for the booking pipeline
+we have so many dahsbaord where the booking details and avaible for example booking dahsbaord, but we sale our products based on the contract, customer can have contract for many months, one thing i alswyas observed is we need to track the booking amount based on the long term booking not a short term booking, because it does give much ides about the short ter bbking, so i come up with a solution saying the we included the parameter view where user can select a long term bookings and short term booking it clear the stakeholder misleadingess, i worked on the logic for the short term and long term, get the parameter and also apply this logic, finally make this very interative
+
+
+Builign Churnlytcis modle and then top of that built dahsbaord to track the customer churn
+when i was equinix, i was a part of builing the churnlytics modle where it predicts particular customer is gogin o churn in next one year or not, we devel;oped a Light gradient boosting algorithem, because we need to understand which customer are leaving and understand and make sure retain as much as possible,where i reduced a input features from 600 to 3300 based on mnay technics lie correlation and threold covariance, with out compromiign the input, and also worked on the inghts formt he data, helped to understand the data nad get the new features from current dataset where it helped to improve the model accuracy liek use the slope of the last 4 quarter to get ne values liek this, i was thoroughly involed in developing he odle and also getting the insgihts,
+
+
+Builign Churnlytcis modle and then top of that built dahsbaord to track the churn with dahsbaord
+
+when i was at equinic,we were able to build churnlytics model when it predict the churn of the customer in 4 quarters, i ften found the we store the histodey predicts and all the results once in a quarter we run in the datawarehouse, this is diffivcult to understand by the dslaes team,as they are many non technical guys, they often found difficulties in writing quesries and getting the results in tables an dunderstand them, as we have all the results stroes, i created a tableau dahsbaord where i included all the details where they can select the aprticualt time preduction results and see hte the number o f high, mediuma nd low risk churn including the amount we are losing and laos present it in visualslly , i came with metrics liek hnumber o fhcunr high, medium, low, and also churn by i ibx region, top country chunr, top customer segment churn liek this many, also added the detailed report for the cistome cunr in next tab, wthis is used my mnay sales team, and improved the retention basedon this, they clearly understand which customer are churning and many thing visually
+
+
+Churnlytics -  Data Quality Check
+when i was working ta equinix, we developed a churnlytics model where it predicts particular customer is gogint o churn or not, we often found that we are getting the data for eveyr qurters and our churn number deflected a lot eveyr quarter we get the modle results, i took a initiave to get the sort out , build a data quality check tool written in python, when we give two datasets, it gives how many features are drifted on what percentage, from top to bottom and also gives all the details like  in each category how many features are drifted and also any duplication, unique and eveyrhting, output is text file and this text file is conceted to the tableau dahsbaord where we can visuauly see the data quality when we give two datasets, including all the details, later this scrip was used by many teams like data science and finance teas  to understand the data quality of the data we are getting
+
+Booking Dashboard – Target Inclusion Disagreement
+we developed a booking dahsbaord at equinix, and i felt like we are missing something because we only added al the metrics related to the booking, if someone from sales leader see it they donlt know wheter they achived their target for the month, waurter or year, ryt, it was not added even though we have target related data in another source, but the team did not want to add becsue of we need to do some changes in dahsbaord and laso mergin the dat form different source, i took a initive and import the targets dtaa and merge with rescte fields , i add the he dual axis visuals where we have booking by ttime in bar groah nd on top of it we have a line ofr the tragets and they can see the target amount, later staekholderand  higher mangers appreciate my effort
+
+
+
+Too technical details, based on manager feedback I come up with Proper visual for live funnle and funnel trend dahsbaord
+
+i developed a funnel related dahbsaord based and also included the all the details required for this dahsbaord, but i added too many technical things liek how we getting the data and logic behind the calculation, i presented it my manger immediately gave a feedback saying data is accurate but you need to work on easy way to understand the stakeholder like come up with good visuals like line graph when we compare the year over year growth and also bar graph to ee the each quarter funeel values(pieplien, commit, uside, closed won)
+
+
+Mentored two Data analyst intern - Taught them business and Tableau 
+i was meotred tow data analyst inyern and given knowledge sharing session to understand the business and data of rhte equinix xomcpany, and also explained about the some tableu and excel use cases, walked them about the two main dahbsoard later they were abel to handle by their about two dahsbaords
+
+
+Involed in Developing KPI Metrics fo rthe Dashboard(Dashboard Name -
+
+
+A/B Tetsing for the Two dahsbaord visuals
+
+
+Salesforce Opportunity Model Build for the dahsbaording purpose of Pportunity
+
+
+Excel VBA for the repeated task (New logos validation in Excel)
+
+
+
+Standardization of All dashboards
+
+
+
+YOY Calcuation
+team was developed a one of the mtric for many dhabsord liek year over year growth KPI, it was hugely used by all stakeholder, one thing i observed that there was a erro calculating it because they were just comparing the over all year previousl to current year, but this is misleading because we need to compare till day of year, then it makes sense i developed a logic for the and push this logic to where ever we included this metrics in the dashboard
+
